@@ -1,5 +1,6 @@
 package eight.lambdas;
 
+import java.util.function.Function;
 import java.util.function.Supplier;
 
 public class Java8LambdasExample {
@@ -23,5 +24,8 @@ public class Java8LambdasExample {
 
     Supplier<String> stringSupplier = () -> "Here's a string";
     System.out.println(stringSupplier.get());
+
+    //    Function<Integer, Long> longValueOfInt = Long::valueOf;
+    Function<Integer, Long> longValueOfInt = (i) -> Long.valueOf(i);
   }
 }

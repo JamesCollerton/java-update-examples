@@ -1,5 +1,6 @@
 package eight;
 
+import eight.interfaces.Java8InterfacesExample;
 import eight.lambdas.Java8LambdasExample;
 import eight.optionals.Java8OptionalExample;
 import eight.streams.Java8StreamsExample;
@@ -15,10 +16,12 @@ public class Java8Features {
   private final Java8LambdasExample java8LambdasExample = new Java8LambdasExample();
   private final Java8StreamsExample java8StreamsExample = new Java8StreamsExample();
   private final Java8OptionalExample java8OptionalExample = new Java8OptionalExample();
+  private final Java8InterfacesExample java8InterfacesExample = new Java8InterfacesExample();
 
   public void run() {
     java8LambdasExample.run();
     java8StreamsExample.run();
     java8OptionalExample.run();
+    java8InterfacesExample.run();
   }
 }
